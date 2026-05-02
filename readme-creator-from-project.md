@@ -30,19 +30,20 @@ GOALS:
 OUTPUT STRUCTURE:
 
 1. Project Title
-2. Short Description (2–3 precise sentences explaining what the project does and why it exists)
-3. Features (ONLY if explicitly supported)
-4. Tech Stack (ONLY confirmed technologies)
-5. Project Structure (key folders/files explained briefly)
-6. Installation Instructions (accurate, step-by-step)
-7. Usage (how to run/use the project)
-8. Configuration (ONLY if environment/config exists)
-9. API Documentation (ONLY if present in code)
-10. Screenshots / Demo (ONLY if provided)
-11. Tests (ONLY if present)
-12. Roadmap / Future Improvements (ONLY if documented)
-13. Contributing (ONLY if relevant files exist)
-14. License (ONLY if defined)
+2. Tags
+3. Short Description (2–3 precise sentences explaining what the project does and why it exists)
+4. Features (ONLY if explicitly supported)
+5. Tech Stack (ONLY confirmed technologies)
+6. Project Structure (key folders/files explained briefly)
+7. Installation Instructions (accurate, step-by-step)
+8. Usage (how to run/use the project)
+9. Configuration (ONLY if environment/config exists)
+10. API Documentation (ONLY if present in code)
+11. Screenshots / Demo (ONLY if provided)
+12. Tests (ONLY if present)
+13. Roadmap / Future Improvements (ONLY if documented)
+14. Contributing (ONLY if relevant files exist)
+15. License (ONLY if relevant files exist)
 
 STYLE GUIDELINES:
 - Use clean, professional Markdown
@@ -51,9 +52,7 @@ STYLE GUIDELINES:
 - Write in a neutral, professional tone
 - Optimize for quick scanning (recruiter-friendly)
 - Avoid repetition and unnecessary verbosity
-
-INPUT:
-<Project files, folder structure, and relevant code will be provided below>
+- Remove mdashes
 
 OUTPUT:
 Return ONLY the final README.md content.
