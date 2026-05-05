@@ -30,7 +30,7 @@ GOALS:
 OUTPUT STRUCTURE:
 
 1. Project Title
-2. Tags
+2. Shields.io badges in a README
 3. Short Description (2–3 precise sentences explaining what the project does and why it exists)
 4. Features (ONLY if explicitly supported)
 5. Tech Stack (ONLY confirmed technologies)
