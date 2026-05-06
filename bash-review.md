@@ -39,9 +39,11 @@ Provide a concise technical breakdown of the original script covering:
 Provide the **complete, finalized version** of the script (not a patch). The script must:
 *   Be fully flat (no functions).
 *   Use only Bash built-ins.
-*   Avoid all pipes and command substitutions.
+*   Avoid all pipes and command substitutions. Within reason (for example, jq or curl
+    must be used).
 *   Include explicit error handling for every critical step.
 *   Use `while read` loops for file parsing instead of `cat` or `grep`.
+*   Code style: shfmt -ln bash -i 4 -w "$1"
 
 #### **3. Implementation Summary**
 Briefly list the specific Bash features used to replace external dependencies (e.g., "Used `${var//search/replace}` instead of `sed`").
