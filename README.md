@@ -41,6 +41,10 @@ install.sh             Automated installation and setup script
 Install the utility suite to your local bin directory:
 
 ```bash
+# One-liner installation
+curl -sfL https://raw.githubusercontent.com/unamatasanatarai/proompt/master/install.sh | bash
+
+# Local execution
 ./install.sh
 ```
 
