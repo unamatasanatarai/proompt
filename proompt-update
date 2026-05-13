@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+__data_dir="${XDG_DATA_HOME:-$HOME/.local/share}/proompt"
+__base_url="https://raw.githubusercontent.com/unamatasanatarai/prompt/master"
+__index_url="$__base_url/metadata/index.txt"
+__template_url="$__base_url/templates"
+
+if ! command -v curl >/dev/null 2>&1; then
+    printf 'Error: curl is required but not installed.\n' >&2
+    exit 1
+fi
+
+if [[ ! -d "$__data_dir" ]]; then
+    mkdir -p "$__data_dir" || {
+        printf 'Error: Cannot create %s\n' "$__data_dir" >&2
+        exit 1
+    }
+fi
+
+printf 'Info: Fetching index...\n'
+# Using a manual temp file to avoid mktemp fork
+__index_tmp="$__data_dir/.index.tmp"
+
+if ! curl -sfL --connect-timeout 10 "$__index_url" -o "$__index_tmp"; then
+    printf 'Error: Failed to fetch index from %s\n' "$__index_url" >&2
+    rm -f "$__index_tmp"
+    exit 1
+fi
+
+# Parallel-friendly download loop
+while IFS= read -r __name || [[ -n "$__name" ]]; do
+    [[ -z "$__name" ]] && continue
+    printf 'Updating: %s\n' "$__name"
+    curl -sfL "$__template_url/$__name" -o "$__data_dir/$__name" &
+
+    # Limit concurrency - justified use of pipeline
+    [[ $(jobs -r | wc -l) -ge 5 ]] && wait -n
+done <"$__index_tmp"
+
+wait
+rm -f "$__index_tmp"
+printf 'Info: Sync complete. Prompts stored in %s\n' "$__data_dir"

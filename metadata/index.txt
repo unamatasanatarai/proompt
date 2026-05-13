@@ -1,0 +1,14 @@
+architect-prd-technical-sequence.md
+bash-create-pragmatic.md
+bash-create.md
+bash-review-strict.md
+bash-review.md
+hld-from-project.md
+hld-review.md
+meta-prompt.md
+pm-hld-to-prd.md
+po-user-stories.md
+prepare-for-interview.md
+readme-creator-from-documentation.md
+readme-creator-from-project.md
+tpm-tasks.md
