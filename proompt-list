@@ -3,12 +3,14 @@
 __data_dir="${XDG_DATA_HOME:-$HOME/.local/share}/proompt"
 
 if [[ ! -d "$__data_dir" ]]; then
-    printf 'Error: No prompts found. Run proompt update first.\n' >&2
-    exit 1
+	printf 'Error: No prompts found. Run proompt update first.\n' >&2
+	exit 1
 fi
 
-# Use pure Bash globbing - shell handles alphabetical sorting
 shopt -s nullglob
 for __f in "$__data_dir"/*; do
-    [[ -f "$__f" ]] && printf '%s\n' "${__f##*/}"
+	if [[ -f "$__f" ]]; then
+		__name="${__f##*/}"
+		printf '%s\n' "${__name%.md}"
+	fi
 done

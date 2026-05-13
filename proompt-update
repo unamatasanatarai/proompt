@@ -18,8 +18,7 @@ if [[ ! -d "$__data_dir" ]]; then
 fi
 
 printf 'Info: Fetching index...\n'
-# Using a manual temp file to avoid mktemp fork
-__index_tmp="$__data_dir/.index.tmp"
+__index_tmp="$__data_dir/.index$$.tmp"
 
 if ! curl -sfL --connect-timeout 10 "$__index_url" -o "$__index_tmp"; then
     printf 'Error: Failed to fetch index from %s\n' "$__index_url" >&2
@@ -27,7 +26,6 @@ if ! curl -sfL --connect-timeout 10 "$__index_url" -o "$__index_tmp"; then
     exit 1
 fi
 
-# Parallel-friendly download loop
 while IFS= read -r __name || [[ -n "$__name" ]]; do
     [[ -z "$__name" ]] && continue
     printf 'Updating: %s\n' "$__name"

@@ -38,6 +38,3 @@ Based on the provided documentation and/or user stories, create a structured bre
 
 **Output:**
 A well-structured task list ready for a development team to pick up without additional clarification.
-
-**Input:**
-
