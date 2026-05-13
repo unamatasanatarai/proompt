@@ -3,7 +3,7 @@
 __data_dir="${XDG_DATA_HOME:-$HOME/.local/share}/proompt"
 
 if [[ ! -d "$__data_dir" ]]; then
-	printf 'Error: No prompts found. Run proompt update first.\n' >&2
+	printf 'Error: No proompts found. Run proompt update first.\n' >&2
 	exit 1
 fi
 

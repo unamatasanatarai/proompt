@@ -20,13 +20,13 @@ update)
 	proompt-update "$@"
 	;;
 -h | --help | help)
-	printf 'usage: %s [command | prompt-id]\n\n' "${0##*/}"
+	printf 'usage: %s [command | proompt-id]\n\n' "${0##*/}"
 	printf 'commands:\n'
 	printf '  list   - list available proompts (local cache)\n'
-	printf '  get    - apply a prompt to a file\n'
+	printf '  get    - apply a proompt to a file\n'
 	printf '  update - download/sync all available proompts\n\n'
 	printf 'shorthand:\n'
-	printf '  %s <prompt-id>  (alias for get)\n\n' "${0##*/}"
+	printf '  %s <proompt-id>  (alias for get)\n\n' "${0##*/}"
 	printf 'example usage:\n'
 	printf '  %s update\n' "${0##*/}"
 	printf '  %s list\n' "${0##*/}"

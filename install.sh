@@ -60,4 +60,4 @@ esac
 printf '\nUsage:\n'
 printf '  proompt update\n'
 printf '  proompt list\n'
-printf '  proompt meta-prompt\n'
+printf '  proompt meta\n'
