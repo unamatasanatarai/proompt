@@ -286,7 +286,7 @@ Translate low-level implementation into understandable engineering value without
 
 # Output Constraints
 
-- Return ONLY the final `README.md` content
+- Return ONLY the final `README.md`
 - Do NOT include analysis
 - Do NOT explain reasoning
 - Do NOT mention missing information

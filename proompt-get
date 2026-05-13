@@ -19,6 +19,4 @@ if [[ ! -f "$__source_path" ]]; then
 	exit 2
 fi
 
-while IFS= read -r __line || [[ -n "$__line" ]]; do
-	printf '%s\n' "$__line"
-done <"$__source_path"
+cat "$__source_path"
