@@ -6,17 +6,17 @@ __proompt_id="$1"
 __source_path="$__data_dir/$__proompt_id"
 
 if [[ -z "$__proompt_id" ]]; then
-	printf 'Usage: %s <proompt-id>\n' "${0##*/}" >&2
-	exit 1
+    printf 'Usage: %s <proompt-id>\n' "${0##*/}" >&2
+    exit 1
 fi
 
 if [[ ! -f "$__source_path" ]]; then
-	__source_path="$__data_dir/$__proompt_id.md"
+    __source_path="$__data_dir/$__proompt_id.md"
 fi
 
 if [[ ! -f "$__source_path" ]]; then
-	printf "Error: Proompt '%s' not found in local cache.\n" "$__proompt_id" >&2
-	exit 2
+    printf "Error: Proompt '%s' not found in local cache.\n" "$__proompt_id" >&2
+    exit 2
 fi
 
 cat "$__source_path"

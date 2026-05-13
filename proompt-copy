@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+dir="${0%/*}"
+[[ "$0" == "$dir" ]] && dir="."
+export PATH="$dir:$PATH"
+
+proompt_id="$1"
+
+if [[ -z "$proompt_id" ]]; then
+    printf 'Usage: %s <proompt-id>\n' "${0##*/}" >&2
+    exit 1
+fi
+
+if proompt-get "$proompt_id" | pbcopy; then
+    printf "Proompt '%s' copied to clipboard.\n" "$proompt_id"
+else
+    exit 1
+fi
