@@ -3,7 +3,7 @@
 __data_dir="${XDG_DATA_HOME:-$HOME/.local/share}/proompt"
 __base_url="https://raw.githubusercontent.com/unamatasanatarai/proompt/master"
 __index_url="$__base_url/metadata/index.txt"
-__template_url="$__base_url/templates"
+__template_url="$__base_url/proompts-templates"
 
 if ! command -v curl >/dev/null 2>&1; then
     printf 'Error: curl is required but not installed.\n' >&2
