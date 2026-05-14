@@ -5,12 +5,12 @@ __dir="${0%/*}"
 export PATH="$__dir:$PATH"
 
 if ! command -v peco >/dev/null 2>&1; then
-	printf 'Error: peco is required but not installed.\n' >&2
-	exit 1
+    printf 'Error: peco is required but not installed.\n' >&2
+    exit 1
 fi
 
 __selected="$(proompt-list | peco --prompt ">" --layout bottom-up)"
 
 if [[ -n "$__selected" ]]; then
-	proompt-copy "$__selected"
+    proompt-copy "$__selected"
 fi
