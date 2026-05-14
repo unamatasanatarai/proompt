@@ -7,7 +7,14 @@ export PATH="$__dir:$PATH"
 __cmd="$1"
 
 case "$__cmd" in
-"" | list)
+"")
+    proompt-ls "$@"
+    ;;
+ls)
+    shift || true
+    proompt-ls "$@"
+    ;;
+list)
     shift || true
     proompt-list "$@"
     ;;
@@ -26,13 +33,16 @@ update)
 -h | --help | help)
     printf 'usage: %s [command | proompt-id]\n\n' "${0##*/}"
     printf 'commands:\n'
-    printf '  list   - list available proompts (local cache)\n'
-    printf '  get    - apply a proompt to a file\n'
-    printf '  copy   - copy a proompt to the clipboard\n'
-    printf '  update - download/sync all available proompts\n\n'
+    printf '  (default) - fuzzy find and copy proompt to clipboard\n'
+    printf '  ls        - fuzzy find and copy proompt to clipboard\n'
+    printf '  list      - list available proompts (local cache)\n'
+    printf '  get       - apply a proompt to a file\n'
+    printf '  copy      - copy a proompt to the clipboard\n'
+    printf '  update    - download/sync all available proompts\n\n'
     printf 'shorthand:\n'
     printf '  %s <proompt-id>  (alias for copy)\n\n' "${0##*/}"
     printf 'example usage:\n'
+    printf '  %s\n' "${0##*/}"
     printf '  %s update\n' "${0##*/}"
     printf '  %s list\n' "${0##*/}"
     printf '  %s copy meta\n' "${0##*/}"
