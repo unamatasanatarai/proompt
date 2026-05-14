@@ -216,6 +216,7 @@ The final implementation should:
 * use shell-native solutions wherever practical
 * preserve behavior
 * remain maintainable and debuggable
+* be XDG compliant
 
 ---
 

@@ -307,6 +307,7 @@ The implementation should:
 * avoid unnecessary cleverness
 * use pragmatic tooling choices
 * scale reasonably for large inputs
+* be XDG compliant
 
 ---
 
