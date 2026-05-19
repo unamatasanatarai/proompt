@@ -200,6 +200,7 @@ The final implementation should:
 * preserve behavior
 * remain maintainable and debuggable
 * be XDG compliant
+* format code as defined by shfmt: shfmt -ln bash -i 4 -w "$@"
 
 ---
 

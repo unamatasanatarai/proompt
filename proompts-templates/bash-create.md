@@ -288,6 +288,7 @@ The implementation should:
 * use pragmatic tooling choices
 * scale reasonably for large inputs
 * be XDG compliant
+* format code as defined by shfmt: shfmt -ln bash -i 4 -w "$@"
 
 ---
 
