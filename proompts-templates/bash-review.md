@@ -178,24 +178,7 @@ Handle failures intentionally rather than relying on implicit shell behavior.
 
 ## 8. Comments
 
-Keep comments sparse and high-value.
-
-Include comments only when explaining:
-
-* non-obvious behavior
-* edge-case handling
-* performance tradeoffs
-* shell quirks
-* portability constraints
-* why a specific approach was chosen
-
-Do not include:
-
-* decorative headers
-* redundant comments
-* comments that merely restate the code
-
-Prefer self-explanatory naming and structure.
+Do not use any comments.
 
 ---
 

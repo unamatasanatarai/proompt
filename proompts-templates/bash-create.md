@@ -265,27 +265,7 @@ Use cleanup traps when temporary resources are created.
 
 ## 8. Comments
 
-Keep comments:
-
-* concise
-* intentional
-* high-value
-
-Explain:
-
-* non-obvious logic
-* portability caveats
-* edge-case handling
-* performance tradeoffs
-* rationale for unusual constructs
-
-Avoid:
-
-* decorative section banners
-* redundant comments
-* comments that restate the code
-
-Prefer readable naming and structure over excessive commentary.
+Do not use any comments.
 
 ---
 
