@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 __index_file="metadata/index.txt"
-__template_dir="proompts-templates"
+__template_dir="templates"
 
 if [[ ! -d "$__template_dir" ]]; then
     printf 'Error: directory not found: %s\n' "$__template_dir" >&2

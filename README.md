@@ -26,14 +26,14 @@ A high-performance CLI utility suite for managing and applying professional engi
 ## Project Structure
 
 ```text
-proompts-templates/    Curated engineering and product prompt templates
-metadata/              Project metadata and template index
-proompt                Main router CLI utility
-proompt-get            Logic for retrieving and applying prompts
-proompt-list           Logic for listing available cached prompts
-proompt-update         Logic for syncing templates with remote repository
-reindex.sh             Utility to rebuild the metadata index
-install.sh             Automated installation and setup script
+templates/        Curated engineering and product prompt templates
+metadata/         Project metadata and template index
+proompt           Main router CLI utility
+proompt-get       Logic for retrieving and applying prompts
+proompt-list      Logic for listing available cached prompts
+proompt-update    Logic for syncing templates with remote repository
+reindex.sh        Utility to rebuild the metadata index
+install.sh        Automated installation and setup script
 ```
 
 ## Installation
@@ -96,7 +96,7 @@ The tools utilize the following environment variables for configuration:
 
 ## Development
 
-To update the local metadata index after adding new templates to `proompts-templates/`:
+To update the local metadata index after adding new templates to `templates/`:
 
 ```bash
 ./reindex.sh
