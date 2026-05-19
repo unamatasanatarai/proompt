@@ -9,7 +9,12 @@ if ! command -v peco >/dev/null 2>&1; then
     exit 1
 fi
 
-__selected="$(proompt-list | peco --prompt ">" --layout bottom-up)"
+__peco_opts=(--prompt ">" --layout bottom-up)
+if (($# > 0)); then
+    __peco_opts+=(--query "$*")
+fi
+
+__selected="$(proompt-list | peco "${__peco_opts[@]}")"
 
 if [[ -n "$__selected" ]]; then
     proompt-copy "$__selected"
