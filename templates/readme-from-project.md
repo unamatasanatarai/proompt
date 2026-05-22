@@ -50,6 +50,7 @@ Use only directly observable evidence from:
 - Do NOT invent setup steps
 - Do NOT create sections unsupported by repository evidence
 - Do NOT use generic filler text
+- Do NOT use citations (`[cite_start` etc)
 
 If something is not explicitly present in the project, omit it completely.
 
