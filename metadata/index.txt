@@ -6,6 +6,7 @@ hld-review.md
 hld-to-prd.md
 job-and-company-analysis.md
 meta.md
+python-cli.md
 readme-from-docs.md
 readme-from-project.md
 roadmap.md
