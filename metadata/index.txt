@@ -1,6 +1,7 @@
 bash-create.md
 bash-review-strict.md
 bash-review.md
+hld-designer.md
 hld-from-project.md
 hld-review.md
 hld-to-prd.md
