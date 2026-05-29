@@ -2,8 +2,9 @@ bash-create.md
 bash-review-strict.md
 bash-review.md
 hld-designer.md
+hld-drill-me.md
+hld-faang-review.md
 hld-from-project.md
-hld-review.md
 hld-to-prd.md
 job-and-company-analysis.md
 meta.md
