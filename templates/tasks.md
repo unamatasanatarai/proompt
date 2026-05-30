@@ -20,7 +20,6 @@ Based on the provided documentation and/or user stories, create a structured bre
    * **Acceptance Criteria** (specific, testable conditions)
    * **Dependencies** (if any)
    * **Priority** (High / Medium / Low)
-   * **Estimated Effort** (optional, if applicable)
 
 4. **Technical Considerations**
 
