@@ -8,7 +8,8 @@ hld-from-project.md
 hld-to-prd.md
 job-and-company-analysis.md
 meta.md
-python-cli.md
+python-cli-create.md
+python-review.md
 readme-from-docs.md
 readme-from-project.md
 roadmap.md
