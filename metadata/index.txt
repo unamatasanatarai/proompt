@@ -1,6 +1,8 @@
 bash-create.md
 bash-review-strict.md
 bash-review.md
+cv.md
+gem-create.md
 hld-designer.md
 hld-drill-me.md
 hld-faang-review.md
@@ -12,6 +14,7 @@ python-cli-create.md
 python-review.md
 readme-from-docs.md
 readme-from-project.md
+readme-marketing-from-project.md
 roadmap.md
 stories.md
 tasks.md
