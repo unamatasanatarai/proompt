@@ -639,13 +639,13 @@ The README should feel like a polished product page.
 Use:
 
 * Strong headings
+* Link to download latest release
 * Short sections
 * Strategic whitespace
 * Tables when useful
 * Feature cards using Markdown
 * Screenshots
 * GIFs
-* Architecture diagrams when they directly help explain the product
 * Callout blocks where appropriate
 * Concise bullets
 * Code blocks only where useful
