@@ -1,6 +1,7 @@
 bash-create.md
 bash-review-strict.md
 bash-review.md
+cr-adversarial-swift.md
 cv.md
 gem-create.md
 hld-designer.md
